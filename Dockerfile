@@ -14,5 +14,5 @@ RUN npm run build
 # Run phase
 # /app/build --> path to build
 FROM nginx
-
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
